@@ -36,3 +36,14 @@ ITEM_PIPELINES = {
 }
 
 
+DOWNLOADER_MIDDLEWARES = {
+
+    ## Rotating User Agents
+    # 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware': None,
+    # 'scrapy_user_agents.middlewares.RandomUserAgentMiddleware': 400,
+
+    ## Rotating Free Proxies
+    # 'scrapy_proxy_pool.middlewares.ProxyPoolMiddleware': 610,
+    # 'scrapy_proxy_pool.middlewares.BanDetectionMiddleware': 620,
+}
+
